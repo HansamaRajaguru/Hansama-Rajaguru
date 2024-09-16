@@ -1,0 +1,82 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color:#F5F5F5 ;
+    width: 100%; /* Full width of the screen */
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* On top of other content */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  .navbar .logo {
+    color: #151515;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent text overflow */
+  }
+  
+  .nav-links li {
+    margin: 0 25px; /* Spacing between links */
+  }
+  
+  .nav-links a {
+    color:#282727;
+    text-decoration: none;
+    font-weight:lighter;
+    font-size: 18px;
+    white-space: nowrap; /* Prevent words from wrapping */
+  }
+  
+  .nav-links a:hover {
+    color: #4002fb;
+  }
+  
+  /* Ensure the navbar remains horizontal on small screens */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px; /* Reduce padding for small screens */
+    }
+  
+    .nav-links {
+      flex-direction: row; /* Keep items side by side */
+      justify-content: space-around; /* Spread items evenly */
+    }
+  
+    .nav-links li {
+      margin: 0 10px; /* Reduce the space between items */
+    }
+  
+    .navbar .logo {
+      font-size: 20px; /* Adjust the logo size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 8px; /* Even smaller padding for very small screens */
+    }
+  
+    .nav-links li {
+      margin: 0 5px; /* Even smaller spacing between links */
+    }
+  
+    .navbar .logo {
+      font-size: 18px; /* Further reduce the logo size */
+    }
+  
+    .nav-links a {
+      font-size: 16px; /* Adjust link font size */
+    }
+  }
+  
