@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+
+.footer {
+    padding: 20px;
+    background-color:#F5F5F5 ;
+    color:#282727;
+    text-align: center;
+    width: 100%; /* Full width */
+    position: fixed; /* Fix to the bottom of the page */
+    bottom: 0;
+    left: 0;
+  }
+  
