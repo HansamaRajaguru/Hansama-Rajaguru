@@ -1,0 +1,39 @@
+/* src/components/HeroSection.css */
+
+.hero-section {
+    display: flex;
+    height: 100vh; /* Adjust the height as needed */
+    width: 100%;
+    margin: 0; /* Remove top margin */
+    padding: 0; /* Remove padding if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.hero-left {
+    flex: 0 0 35%; /* 35% width */
+    background-color: #f0e6d6; /* Cream background */
+    padding: 40px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.hero-right {
+    flex: 0 0 65%; /* 65% width */
+    background-color: #fff; /* White background */
+    padding: 40px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.hero-left h1,
+.hero-right p {
+    margin: 0;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero-right p {
+    font-size: 1.2rem;
+    color: #666;
+}

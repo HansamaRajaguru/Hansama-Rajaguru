@@ -3,30 +3,21 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding-top: 80px; /* Add padding to account for the fixed navbar height */
-  padding-bottom: 60px; /* Ensure there's space for the footer */
+  padding: 0;
   background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  min-height: 100vh; /* Ensure body takes full height of the viewport */
+}
+
+.main-content {
+  padding-top: 0px; /* Height of the fixed navbar */
+  padding-bottom: 0px; /* Height of the fixed footer */
+  /* No additional margins to ensure no extra space */
+}
+
+/* Remove margin from the section element if it is causing space issues */
+section {
+  margin: 0;
 }
 
 h2 {
   color: #333;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Ensure main content takes up available space */
-.main-content {
-  flex: 1; /* Take up remaining space */
 }

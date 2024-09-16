@@ -2,17 +2,14 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'; // Import the Footer component
+import HeroSection from './components/HeroSection'; // Import the HeroSection component
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <div className="main-content">
       <Navbar />
-      <div>
-        {/* Your main content here */}
-        <h2>Welcome to My Portfolio</h2>
-        {/* More content */}
-      </div>
+      <HeroSection /> {/* Render the HeroSection component */}
       <Footer /> {/* Render the Footer component */}
     </div>
   );

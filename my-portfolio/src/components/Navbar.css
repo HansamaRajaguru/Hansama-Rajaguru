@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color:#F5F5F5 ;
     width: 100%; /* Full width of the screen */
     position: fixed; /* Fixed at the top */
@@ -34,7 +34,7 @@
     color:#282727;
     text-decoration: none;
     font-weight:lighter;
-    font-size: 18px;
+    font-size: 14px;
     white-space: nowrap; /* Prevent words from wrapping */
   }
   
