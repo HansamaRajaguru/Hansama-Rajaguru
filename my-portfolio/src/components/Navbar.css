@@ -41,7 +41,12 @@
   .nav-links a:hover {
     color: #4002fb;
   }
-  
+  /* Active class styling */
+.nav-links a.active {
+    color: #4002fb;
+    font-weight:lighter;
+    
+  }
   /* Ensure the navbar remains horizontal on small screens */
   @media (max-width: 768px) {
     .navbar {
@@ -79,4 +84,6 @@
       font-size: 16px; /* Adjust link font size */
     }
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }

@@ -7,7 +7,7 @@ import { faFacebookF, faLinkedinIn, faGoogle } from '@fortawesome/free-brands-sv
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="about">
       <div className="hero-left">
       <div className="profile-card">
       <img
