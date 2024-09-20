@@ -8,4 +8,12 @@
     bottom: 0; 
     width: 100%; 
     box-sizing: border-box; 
+    margin-top: auto; 
+    position: relative;
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 10px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Smaller text */
+    }
 }

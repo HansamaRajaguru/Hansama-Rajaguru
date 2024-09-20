@@ -1,5 +1,5 @@
-// src/components/Navbar.tsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
@@ -14,40 +14,40 @@ const Navbar: React.FC = () => {
       <div className="logo">Hansama Rajaguru</div>
       <ul className="nav-links">
         <li>
-          <a
-            href="#about"
+          <Link
+            to="/"
             className={activeLink === 'about' ? 'active' : ''}
             onClick={() => handleSetActive('about')}
           >
             ABOUT ME
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#resume"
+          <Link
+            to="/resume"
             className={activeLink === 'resume' ? 'active' : ''}
             onClick={() => handleSetActive('resume')}
           >
             RESUME
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#projects"
+          <Link
+            to="/projects"
             className={activeLink === 'projects' ? 'active' : ''}
             onClick={() => handleSetActive('projects')}
           >
             PROJECTS
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className={activeLink === 'contact' ? 'active' : ''}
             onClick={() => handleSetActive('contact')}
           >
             CONTACT
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

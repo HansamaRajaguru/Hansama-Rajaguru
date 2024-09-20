@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
       </div>
       <div className="hero-right">
         <div className='right-text'>
-            <h1>Hello</h1>
+            <h1>Hello I'm Hansama Rajaguru</h1>
             <h2 className="right-text-title">Here's who I am & what I do</h2>
             <div className="button-container">
                 <a href="/resume" className="button">RESUME</a>
@@ -41,7 +41,10 @@ const HeroSection: React.FC = () => {
             </div>
             <p className="right-text-content">
                 I am an enthusiastic undergraduate in the University of Sri Jayewardenapura, Sri Lanka. I'm in my third year, undertaking a Bachelor of Science (Honours) degree in Information and Communication Technology (ICT).
-                <br/> Throughout my academic journey, I've delved into various programming languages, including Python, JavaScript, and TypeScript and also HTML, CSS. 
+                 </p>
+            <br/>  
+            <p className="right-text-content">
+                    Throughout my academic journey, I've delved into various programming languages, including Python, JavaScript, and TypeScript and also HTML, CSS. 
                 Additionally, I've honed my skills in developing mobile applications using React Native. I've extended my expertise to crafting interactive web applications with React and Next.js, showcasing a comprehensive understanding of frontend development across various platforms.
                 
             

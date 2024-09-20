@@ -11,10 +11,11 @@
     top: 0;
     left: 0;
     z-index: 1000; /* On top of other content */
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box; 
+    transition: padding 0.3s ease;
   }
   .navbar .logo {
-    color: #151515;
+    color: #002A62;
     font-size: 28px;
     font-weight: bold;
   }
@@ -47,43 +48,59 @@
     font-weight:lighter;
     
   }
-  /* Ensure the navbar remains horizontal on small screens */
   @media (max-width: 768px) {
     .navbar {
-      padding: 10px; /* Reduce padding for small screens */
+        padding: 10px; /* Reduce padding for small screens */
     }
-  
+
     .nav-links {
-      flex-direction: row; /* Keep items side by side */
-      justify-content: space-around; /* Spread items evenly */
+        flex-direction: row; /* Keep items side by side */
+        justify-content: space-between; /* Spread items evenly */
     }
-  
+
     .nav-links li {
-      margin: 0 10px; /* Reduce the space between items */
+        margin: 0 15px; /* Adjust spacing between links */
     }
-  
+
     .navbar .logo {
-      font-size: 20px; /* Adjust the logo size */
+        font-size: 22px; /* Adjust the logo size for tablets */
     }
-  }
-  
-  @media (max-width: 480px) {
-    .navbar {
-      padding: 8px; /* Even smaller padding for very small screens */
-    }
-  
-    .nav-links li {
-      margin: 0 5px; /* Even smaller spacing between links */
-    }
-  
-    .navbar .logo {
-      font-size: 18px; /* Further reduce the logo size */
-    }
-  
+
     .nav-links a {
-      font-size: 16px; /* Adjust link font size */
+        font-size: 14px; /* Adjust link font size for tablets */
     }
-  }
-  html {
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 15px; /* Further reduce padding for very small screens */
+        flex-direction: column; /* Stack the logo and links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Make links take full width */
+        align-items: flex-start; /* Align links to the left */
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 8px 0; /* Add vertical spacing between links */
+    }
+
+    .navbar .logo {
+        font-size: 18px; /* Further reduce the logo size for mobile */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Adjust link font size for mobile */
+    }
+}
+
+/* Smooth scroll behavior */
+html {
     scroll-behavior: smooth;
-  }
+}
