@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
       </div>
       <div className="hero-right">
         <div className='right-text'>
-            <h1>Hello I'm Hansama Rajaguru</h1>
+            <h1 className='heading-title'>Hello I'm Hansama Rajaguru</h1>
             <h2 className="right-text-title">Here's who I am & what I do</h2>
             <div className="button-container">
                 <a href="/resume" className="button">RESUME</a>

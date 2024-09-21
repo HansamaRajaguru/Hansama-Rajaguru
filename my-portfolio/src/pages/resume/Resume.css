@@ -1,0 +1,125 @@
+
+.resume-section {
+    display: flex;
+    flex-direction: column; /* Stack heading and title-section vertically */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    background-color: #0c3f81;
+    min-height: 100vh; 
+    width: 100%;
+    padding-top: 40px;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+
+.heading {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 40px; /* Space between the heading and title-section */
+    text-align: center;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: row; /* Align "Education" and button horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content:space-between; /* Center the entire row */
+    width: 100%; /* Full width for better alignment */
+    max-width: 800px; /* Optional: Limit the max width */
+    gap: 20px; /* Space between "Education" text and button */
+}
+
+.title-section h2 {
+    color: white;
+    font-size: 26px;
+    margin: 0; /* Remove default margin */
+    text-align: left;
+}
+
+.title-section button {
+    padding: 12px 24px; /* Slightly larger padding for a better feel */
+    font-size: 16px;
+    background: linear-gradient(135deg, #feb5af, #ff8a5c); /* Gradient background */
+    color: white; /* White text for better contrast */
+    border: none;
+    border-radius: 8px; /* Softer corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08); /* Multiple shadow layers for depth */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.title-section button:hover {
+    background: linear-gradient(135deg, #ff8a5c, #feb5af); /* Reverse the gradient on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.12); /* Increase shadow depth on hover */
+    transform: translateY(-3px); /* Lift the button slightly */
+}
+
+.title-section button:active {
+    transform: translateY(0); /* Return to original position on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow when clicked */
+}
+
+.education-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+    margin-top: 40px; /* Space above the cards */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd; /* Light border for the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Optional: limit max width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Slightly scale the card on hover */
+}
+
+.card h3 {
+    color: #002A62; /* Institution color */
+    margin-bottom: 10px; /* Space below institution name */
+}
+
+.card p {
+    color: #555; /* Description color */
+    margin: 5px 0; /* Vertical spacing between paragraphs */
+}
+.card ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+.card li {
+    margin: 5px 0; /* Vertical space between list items */
+    color: #555; /* Use the same text color as paragraphs */
+}
+
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .title-section {
+        flex-direction: row; /* Ensure items stay in one row on small screens */
+        width: 80%; /* Adjust width for smaller screens */
+        gap: 10px; /* Adjust gap between elements */
+    }
+
+    .title-section h2 {
+        font-size: 20px;
+    }
+
+    .title-section button {
+        padding: 6px 16px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
