@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Resume from './pages/resume/Resume'; 
 import Projects from './pages/projects/Project';
+import Contact from './pages/contacts/contacts';
 import './App.css';
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/" element={<HeroSection />} /> 
         <Route path="/resume" element={<Resume />} /> 
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* Conditionally render Footer only on the HeroSection (home page) */}
       {location.pathname === '/' && <Footer />}

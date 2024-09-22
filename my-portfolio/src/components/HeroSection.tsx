@@ -3,8 +3,8 @@ import React from 'react';
 import './HeroSection.css'; // Import the CSS file for the hero section
 import profileImage from './profile.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn, faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import { faFacebookF, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 const HeroSection: React.FC = () => {
   return (
     <div className="hero-section" id="about">
@@ -24,8 +24,8 @@ const HeroSection: React.FC = () => {
             <a href="https://www.linkedin.com/in/hansama-rajaguru-865063270" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-            <a href="mailto:hansamarajaguru@gmail.com">
-              <FontAwesomeIcon icon={faGoogle} />
+            <a href="mailto:hansamarajaguru@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faEnvelope}  />
             </a>
             <a href="https://github.com/HansamaRajaguru" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} /> {/* Add GitHub icon */}
