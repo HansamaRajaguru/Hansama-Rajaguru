@@ -1,14 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import HeroSection from './components/HeroSection';
-import Resume from './pages/resume/Resume'; 
-import Projects from './pages/projects/Project';
-import Contact from './pages/contacts/contacts';
+import MainContent from './MainContent';
 import './App.css';
 
 const App: React.FC = () => {
+<<<<<<< Updated upstream
   const location = useLocation(); // Moved this inside WrappedApp
 
   return (
@@ -24,13 +22,22 @@ const App: React.FC = () => {
       {location.pathname === '/' && <Footer />}
     </div>
   );
+=======
+    return (
+        <div className="app-container">
+            <Navbar />
+            <MainContent />
+            <Footer />
+        </div>
+    );
+>>>>>>> Stashed changes
 };
 
 // Moved the useLocation inside the correct Router scope
 const WrappedApp: React.FC = () => (
-  <Router>
-    <App />
-  </Router>
+    <Router>
+        <App />
+    </Router>
 );
 
 export default WrappedApp;

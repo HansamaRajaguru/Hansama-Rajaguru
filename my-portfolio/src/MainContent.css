@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make sure it uses full width */
+}
+
+.resume-section,
+.projects-section,
+.contact-section {
+    padding: 40px 20px; /* Adjust as needed */
+    scroll-margin-top: 70px; 
+    margin: auto; /* Center the sections */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .resume-section,
+    .projects-section,
+    .contact-section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-section,
+    .projects-section,
+    .contact-section {
+        padding: 20px 10px; /* Further reduce padding for mobile */
+    }
+}
+
+/* Example responsive adjustments for headings */
+h1, h2 {
+    font-size: 2.5em; /* Large for desktops */
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 2em; /* Medium for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em; /* Smaller for mobile */
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%; /* Ensure images scale down */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Flexbox adjustments for project cards or other elements */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space out cards */
+}
+
+.project-card {
+    flex: 1 1 calc(33% - 20px); /* 3 cards per row with some margin */
+    margin: 10px; /* Space between cards */
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 1 1 100%; /* 1 card per row on mobile */
+    }
+}
