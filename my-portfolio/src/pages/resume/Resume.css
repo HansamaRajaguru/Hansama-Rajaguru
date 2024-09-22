@@ -4,7 +4,7 @@
     flex-direction: column; /* Stack heading and title-section vertically */
     align-items: center;
     justify-content: flex-start; /* Align items to the top */
-    background-color: #0c3f81;
+    background: linear-gradient(to right, #002A62, #feb5af);
     min-height: 100vh; 
     width: 100%;
     padding-top: 40px;
@@ -39,7 +39,7 @@
 .title-section button {
     padding: 12px 24px; /* Slightly larger padding for a better feel */
     font-size: 16px;
-    background: linear-gradient(135deg, #feb5af, #ff8a5c); /* Gradient background */
+    background: linear-gradient(135deg, #feb5af, #002A62); /* Gradient background */
     color: white; /* White text for better contrast */
     border: none;
     border-radius: 8px; /* Softer corners */

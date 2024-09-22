@@ -27,3 +27,6 @@ section {
 html {
   scroll-behavior: smooth;
 }
+footer {
+  margin-top: auto; /* Footer will be pushed to the bottom when needed */
+}

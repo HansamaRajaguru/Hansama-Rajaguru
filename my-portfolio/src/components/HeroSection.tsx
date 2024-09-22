@@ -3,7 +3,7 @@ import React from 'react';
 import './HeroSection.css'; // Import the CSS file for the hero section
 import profileImage from './profile.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faLinkedinIn, faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const HeroSection: React.FC = () => {
   return (
@@ -26,6 +26,9 @@ const HeroSection: React.FC = () => {
             </a>
             <a href="mailto:hansamarajaguru@gmail.com">
               <FontAwesomeIcon icon={faGoogle} />
+            </a>
+            <a href="https://github.com/HansamaRajaguru" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} /> {/* Add GitHub icon */}
             </a>
           </div>
           

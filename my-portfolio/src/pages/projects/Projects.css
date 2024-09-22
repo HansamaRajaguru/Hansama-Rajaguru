@@ -1,0 +1,83 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #002A62, #feb5af);
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    overflow-y: auto;
+}
+
+.heading {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between;
+    align-items: center; /* Align content vertically */
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-info {
+    flex: 1; /* Occupy available space for text */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.project-info h3 {
+    color: #002A62;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.project-image {
+    width: 300px; /* Fixed width for images */
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure images cover the space properly */
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column; /* Stack info and image vertically on small screens */
+        align-items: flex-start; /* Align text to the left */
+    }
+
+    .project-image {
+        margin-top: 15px; /* Add space above image */
+        width: 100%; /* Full width on smaller screens */
+    }
+}
