@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
@@ -9,45 +8,64 @@ const Navbar: React.FC = () => {
     setActiveLink(link);
   };
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">Hansama Rajaguru</div>
       <ul className="nav-links">
         <li>
-          <Link
-            to="/"
+          <a
+            href="#about"
             className={activeLink === 'about' ? 'active' : ''}
-            onClick={() => handleSetActive('about')}
+            onClick={() => {
+              handleSetActive('about');
+              scrollToSection('about');
+            }}
           >
             ABOUT ME
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/resume"
+          <a
+            href="#resume"
             className={activeLink === 'resume' ? 'active' : ''}
-            onClick={() => handleSetActive('resume')}
+            onClick={() => {
+              handleSetActive('resume');
+              scrollToSection('resume');
+            }}
           >
             RESUME
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/projects"
+          <a
+            href="#projects"
             className={activeLink === 'projects' ? 'active' : ''}
-            onClick={() => handleSetActive('projects')}
+            onClick={() => {
+              handleSetActive('projects');
+              scrollToSection('projects');
+            }}
           >
             PROJECTS
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/contact"
+          <a
+            href="#contact"
             className={activeLink === 'contact' ? 'active' : ''}
-            onClick={() => handleSetActive('contact')}
+            onClick={() => {
+              handleSetActive('contact');
+              scrollToSection('contact');
+            }}
           >
             CONTACT
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
