@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
@@ -12,8 +12,31 @@ const Navbar: React.FC = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      handleSetActive(id); // Set active link immediately on click
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
+      let scrollPosition = window.scrollY; // Get the current scroll position
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        // Check if the section is currently in view
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          handleSetActive(section.id);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -23,10 +46,7 @@ const Navbar: React.FC = () => {
           <a
             href="#about"
             className={activeLink === 'about' ? 'active' : ''}
-            onClick={() => {
-              handleSetActive('about');
-              scrollToSection('about');
-            }}
+            onClick={() => scrollToSection('about')}
           >
             ABOUT ME
           </a>
@@ -35,10 +55,7 @@ const Navbar: React.FC = () => {
           <a
             href="#resume"
             className={activeLink === 'resume' ? 'active' : ''}
-            onClick={() => {
-              handleSetActive('resume');
-              scrollToSection('resume');
-            }}
+            onClick={() => scrollToSection('resume')}
           >
             RESUME
           </a>
@@ -47,10 +64,7 @@ const Navbar: React.FC = () => {
           <a
             href="#projects"
             className={activeLink === 'projects' ? 'active' : ''}
-            onClick={() => {
-              handleSetActive('projects');
-              scrollToSection('projects');
-            }}
+            onClick={() => scrollToSection('projects')}
           >
             PROJECTS
           </a>
@@ -59,10 +73,7 @@ const Navbar: React.FC = () => {
           <a
             href="#contact"
             className={activeLink === 'contact' ? 'active' : ''}
-            onClick={() => {
-              handleSetActive('contact');
-              scrollToSection('contact');
-            }}
+            onClick={() => scrollToSection('contact')}
           >
             CONTACT
           </a>

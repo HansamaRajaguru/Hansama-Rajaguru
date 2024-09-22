@@ -1,11 +1,10 @@
-
 import React from 'react';
 import './HeroSection.css'; // Import the CSS file for the hero section
 import profileImage from './profile.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -30,7 +29,7 @@ const HeroSection: React.FC = () => {
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
             <a href="https://github.com/HansamaRajaguru" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} /> {/* Add GitHub icon */}
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>
@@ -40,9 +39,9 @@ const HeroSection: React.FC = () => {
           <h1 className="heading-title">Hello I'm Hansama Rajaguru</h1>
           <h2 className="right-text-title">Here's who I am & what I do</h2>
           <div className="button-container">
-            <a href="/resume" className="button">RESUME</a>
-            <a href="/projects" className="button">PROJECTS</a>
-          </div>
+                <a href="#resume" className="button">RESUME</a>
+                <a href="#projects" className="button">PROJECTS</a>
+            </div>
           <p className="right-text-content">
             I am an enthusiastic undergraduate at the University of Sri Jayewardenapura, Sri Lanka. I'm in my third year, undertaking a Bachelor of Science (Honours) degree in Information and Communication Technology (ICT).
           </p>
