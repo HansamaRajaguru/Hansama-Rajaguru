@@ -1,0 +1,95 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #002A62, #feb5af);
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 20px;
+    overflow-y: auto;
+}
+
+.heading {
+    color: white;
+    font-size: 32px; /* Increase font size */
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase; /* Make heading uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    transition: transform 0.3s ease;
+}
+
+.heading:hover {
+    transform: scale(1.05); /* Slightly scale on hover */
+}
+
+.contact-content {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Slightly round corners */
+    padding: 30px; /* Increase padding */
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-content:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.contact-description {
+    color: #555;
+    margin-bottom: 30px; /* Increase spacing below */
+    font-size: 1.1rem; /* Slightly larger text */
+    line-height: 1.6; /* Improve readability */
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Increased gap for better spacing */
+    margin-bottom: 30px; /* Add space below icons */
+}
+
+.icon {
+    font-size: 36px; /* Increase icon size */
+    color: #002A62;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+    color: #feb5af; /* Change color on hover */
+}
+
+.email-text {
+    font-size: 1.2rem;
+    color: #002A62;
+}
+
+.email-text a {
+    color: #002A62;
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.email-text a:hover {
+    color: #4299e1; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .contact-content {
+        width: 90%;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+}

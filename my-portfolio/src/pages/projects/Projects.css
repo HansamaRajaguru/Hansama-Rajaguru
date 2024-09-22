@@ -1,0 +1,91 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #002A62, #feb5af);
+    min-height: 100vh;
+    padding: 40px 20px;
+    overflow-y: auto;
+}
+
+.heading {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Increase space between cards */
+    width: 100%;
+    max-width: 1000px;
+    
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 12px; /* Softer corners */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for shadow */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.project-info {
+    flex: 1;
+    padding-left: 20px; /* Space between text and image */
+}
+
+.project-info h3 {
+    color: #002A62;
+    margin-bottom: 10px;
+    font-size: 24px; /* Larger font size for titles */
+}
+
+.project-info p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.project-image {
+    width: 200px; /* Adjust width for images */
+    border-radius: 8px; /* Rounded corners for images */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.project-image:hover img {
+    transform: scale(1.05); /* Slight zoom on image hover */
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column; /* Stack info and image vertically */
+        align-items: flex-start; /* Align text to the left */
+    }
+
+    .project-image {
+        margin-top: 15px;
+        width: 100%; /* Full width on smaller screens */
+    }
+}
