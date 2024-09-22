@@ -36,10 +36,10 @@ const Resume: React.FC = () => {
     return (
         <div className="resume-section">
             <div className='heading'>
-                <h1>RESUME</h1>
+                <h1>Resume</h1>
             </div>
             <div className='title-section'>
-                <h2>EDUCATION</h2>
+                <h2>Education</h2>
                 <a href="/Hansama Resume.pdf" download>
                     <button>Download CV</button>
                 </a>
@@ -54,24 +54,23 @@ const Resume: React.FC = () => {
                     </div>
                 ))}
                 <div className="card">
-            <h3>Professional Skillset</h3>
-            <ul>
-            <li>Programming & Software Development</li>
-                <li>Data Structures & Algorithms</li>
-                <li>Web Development (HTML, CSS, JavaScript)</li>
-                <li>Database Management (SQL, MongoDB)</li>
-                <li>Version Control (Git, GitHub)</li>
-                <li>Problem-Solving & Critical Thinking</li>
-                <li>Teamwork & Collaboration</li>
-                
-            </ul>
-                <br/>
-            <h3>Languages</h3>
-            <ul>
-                <li>English </li>
-                <li>Sinhala</li>
-            </ul>
-        </div>
+                    <h3>Professional Skillset</h3>
+                    <ul>
+                        <li>Programming & Software Development</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Database Management (SQL, MongoDB)</li>
+                        <li>Version Control (Git, GitHub)</li>
+                        <li>Problem-Solving & Critical Thinking</li>
+                        <li>Teamwork & Collaboration</li>
+                    </ul>
+                    <br />
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Sinhala</li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
