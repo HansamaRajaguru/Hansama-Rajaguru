@@ -9,7 +9,7 @@ import Contact from './pages/contacts/contacts';
 import './App.css';
 
 const App: React.FC = () => {
-  const location = useLocation(); // Moved this inside WrappedApp
+  const location = useLocation();
 
   return (
     <div className="main-content">
@@ -20,13 +20,11 @@ const App: React.FC = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* Conditionally render Footer only on the HeroSection (home page) */}
       {location.pathname === '/' && <Footer />}
     </div>
   );
 };
 
-// Moved the useLocation inside the correct Router scope
 const WrappedApp: React.FC = () => (
   <Router>
     <App />
