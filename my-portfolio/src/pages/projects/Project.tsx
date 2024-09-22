@@ -1,7 +1,17 @@
 import React from 'react';
 import './Projects.css';
 
-const projectDetails = [
+// Define the type for project details
+interface ProjectDetails {
+    id: number;
+    title: string;
+    description: string;
+    duration: string;
+    image: string;
+}
+
+// Mock data for project details
+const projectDetails: ProjectDetails[] = [
     {
         id: 1,
         title: "RecipeHub Web Application",
@@ -28,16 +38,16 @@ const projectDetails = [
 const Projects: React.FC = () => {
     return (
         <div className="projects-section">
-            <div className='heading'>
+            <div className="heading">
                 <h1>PROJECTS</h1>
             </div>
-            <div className='project-cards'>
+            <div className="project-cards">
                 {projectDetails.map((project) => (
-                    <div key={project.id} className='project-card'>
-                        <div className='project-image'>
+                    <div key={project.id} className="project-card">
+                        <div className="project-image">
                             <img src={project.image} alt={project.title} />
                         </div>
-                        <div className='project-info'>
+                        <div className="project-info">
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
                             <p><strong>{project.duration}</strong></p>
