@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Hansama-Rajaguru/static/css/main.4f005a4e.css",
+    "main.js": "/Hansama-Rajaguru/static/js/main.ccf263ad.js",
+    "static/media/profile.jpeg": "/Hansama-Rajaguru/static/media/profile.ca48614e62e514e91616.jpeg",
+    "index.html": "/Hansama-Rajaguru/index.html",
+    "main.4f005a4e.css.map": "/Hansama-Rajaguru/static/css/main.4f005a4e.css.map",
+    "main.ccf263ad.js.map": "/Hansama-Rajaguru/static/js/main.ccf263ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f005a4e.css",
+    "static/js/main.ccf263ad.js"
+  ]
+}
