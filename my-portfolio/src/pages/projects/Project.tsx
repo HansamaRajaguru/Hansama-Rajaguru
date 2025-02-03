@@ -17,14 +17,14 @@ const projectDetails: ProjectDetails[] = [
         title: "RecipeHub Web Application",
         description: "A recipe-sharing platform allowing users to browse, share, and manage their favorite recipes using the MERN stack.",
         duration: "2024",
-        image: "/images/RecipeHub Web.png"
+        image: "/images/RecipeHub-Web.png"
     },
     {
         id: 2,
         title: "Portfolio Website",
         description: "A personal portfolio website showcasing projects, skills, and achievements. Developed using React and CSS.",
         duration: "2024",
-        image: "/images/portfolio.png",
+        image: "/images/Portfolio.png",
     },
     {
         id: 3,

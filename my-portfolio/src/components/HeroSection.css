@@ -13,7 +13,7 @@
 }
 .hero-left {
     flex: 0 0 100%; 
-    background: linear-gradient(to right, #002A62, #feb5af);
+    background: linear-gradient(to right, #002A62, #785e5c);
     padding: 20px; 
     display: flex;
     justify-content: center;
