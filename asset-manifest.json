@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/hansama-rajaguru/static/css/main.4f005a4e.css",
-    "main.js": "/hansama-rajaguru/static/js/main.84cfed7b.js",
-    "static/media/profile.jpeg": "/hansama-rajaguru/static/media/profile.ca48614e62e514e91616.jpeg",
-    "index.html": "/hansama-rajaguru/index.html",
-    "main.4f005a4e.css.map": "/hansama-rajaguru/static/css/main.4f005a4e.css.map",
-    "main.84cfed7b.js.map": "/hansama-rajaguru/static/js/main.84cfed7b.js.map"
+    "main.css": "/Hansama-Rajaguru/static/css/main.4f005a4e.css",
+    "main.js": "/Hansama-Rajaguru/static/js/main.5f32d7f6.js",
+    "static/media/profile.jpeg": "/Hansama-Rajaguru/static/media/profile.ca48614e62e514e91616.jpeg",
+    "index.html": "/Hansama-Rajaguru/index.html",
+    "main.4f005a4e.css.map": "/Hansama-Rajaguru/static/css/main.4f005a4e.css.map",
+    "main.5f32d7f6.js.map": "/Hansama-Rajaguru/static/js/main.5f32d7f6.js.map"
   },
   "entrypoints": [
     "static/css/main.4f005a4e.css",
-    "static/js/main.84cfed7b.js"
+    "static/js/main.5f32d7f6.js"
   ]
 }
