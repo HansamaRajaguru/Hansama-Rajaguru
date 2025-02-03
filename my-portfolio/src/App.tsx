@@ -16,7 +16,7 @@ const App: React.FC = () => {
 };
 
 const WrappedApp: React.FC = () => (
-    <Router>
+    <Router basename="/Hansama-Rajaguru">
         <App />
     </Router>
 );
