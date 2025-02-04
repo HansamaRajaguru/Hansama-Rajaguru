@@ -1,17 +1,14 @@
 {
   "files": {
     "main.css": "/Hansama-Rajaguru/static/css/main.3498dd8f.css",
-    "main.js": "/Hansama-Rajaguru/static/js/main.509e4918.js",
-    "static/media/RecipeHub-Web.png": "/Hansama-Rajaguru/static/media/RecipeHub-Web.23f6947b86be155c0dd1.png",
-    "static/media/mobileapp.png": "/Hansama-Rajaguru/static/media/mobileapp.f35f8a71551b9b79d562.png",
-    "static/media/Portfolio.png": "/Hansama-Rajaguru/static/media/Portfolio.3af94c990f3ec45fcb26.png",
+    "main.js": "/Hansama-Rajaguru/static/js/main.be210e55.js",
     "static/media/profile.jpeg": "/Hansama-Rajaguru/static/media/profile.ca48614e62e514e91616.jpeg",
     "index.html": "/Hansama-Rajaguru/index.html",
     "main.3498dd8f.css.map": "/Hansama-Rajaguru/static/css/main.3498dd8f.css.map",
-    "main.509e4918.js.map": "/Hansama-Rajaguru/static/js/main.509e4918.js.map"
+    "main.be210e55.js.map": "/Hansama-Rajaguru/static/js/main.be210e55.js.map"
   },
   "entrypoints": [
     "static/css/main.3498dd8f.css",
-    "static/js/main.509e4918.js"
+    "static/js/main.be210e55.js"
   ]
 }
