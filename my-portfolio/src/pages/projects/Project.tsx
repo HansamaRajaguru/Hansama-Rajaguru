@@ -1,6 +1,8 @@
 import React from 'react';
 import './Projects.css';
-
+import Portfolio from './images/Portfolio.png';
+import RecipeHub from './images/RecipeHub-Web.png';
+import mobileapp from './images/mobileapp.png';
 
 // Define the type for project details
 interface ProjectDetails {
@@ -18,21 +20,21 @@ const projectDetails: ProjectDetails[] = [
         title: "RecipeHub Web Application",
         description: "A recipe-sharing platform allowing users to browse, share, and manage their favorite recipes using the MERN stack.",
         duration: "2024",
-        image: "images/RecipeHub-Web.png"
+        image: RecipeHub
     },
     {
         id: 2,
         title: "Portfolio Website",
         description: "A personal portfolio website showcasing projects, skills, and achievements. Developed using React and CSS.",
         duration: "2024",
-        image: "images/Portfolio.png",
+        image: Portfolio,
     },
     {
         id: 3,
         title: "Botanic Buddy Mobile Application",
         description: "A plant care and disease identification mobile application using React-Native and TypeScript.",
         duration: "2023",
-        image: "images/mobileapp.png",
+        image: mobileapp,
     }
 ];
 
