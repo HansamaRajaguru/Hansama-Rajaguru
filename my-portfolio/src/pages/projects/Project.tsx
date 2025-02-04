@@ -1,8 +1,8 @@
 import React from 'react';
 import './Projects.css';
-import Portfolio from './images/Portfolio.png';
-import RecipeHub from './images/RecipeHub-Web.png';
-import mobileapp from './images/mobileapp.png';
+import Portfolio from './Portfolio.png';
+import RecipeHub from './RecipeHub-Web.png';
+import mobileapp from './mobileapp.png';
 
 // Define the type for project details
 interface ProjectDetails {
