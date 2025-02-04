@@ -10,6 +10,9 @@ interface ProjectDetails {
     image: string;
 }
 
+// Get correct base URL for images (GitHub Pages friendly)
+const basePath = process.env.PUBLIC_URL || "";
+
 // Mock data for project details
 const projectDetails: ProjectDetails[] = [
     {
@@ -17,21 +20,21 @@ const projectDetails: ProjectDetails[] = [
         title: "RecipeHub Web Application",
         description: "A recipe-sharing platform allowing users to browse, share, and manage their favorite recipes using the MERN stack.",
         duration: "2024",
-        image: process.env.PUBLIC_URL + "/Hansama-Rajaguru/images/RecipeHub-Web.png"
+        image: `${basePath}/images/RecipeHub-Web.png`
     },
     {
         id: 2,
         title: "Portfolio Website",
         description: "A personal portfolio website showcasing projects, skills, and achievements. Developed using React and CSS.",
         duration: "2024",
-        image: process.env.PUBLIC_URL + "/Hansama-Rajaguru/images/Portfolio.png",
+        image: `${basePath}/images/Portfolio.png`
     },
     {
         id: 3,
         title: "Botanic Buddy Mobile Application",
         description: "A plant care and disease identification mobile application using React-Native and TypeScript.",
         duration: "2023",
-        image: process.env.PUBLIC_URL + "/Hansama-Rajaguru/images/mobileapp.png",
+        image: `${basePath}/images/mobileapp.png`
     }
 ];
 
